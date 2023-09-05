@@ -14,18 +14,40 @@
         <p>My Books Library</p>
     </header>
     <main>
+        <div class="home">
+            <a href="index.html">
+                <button>Back to library</button>
+            </a>
+        </div>
         <form id="book-form">
-            <label for="author">Author's name:</label>
-            <input type="text" id="author" name="author" placeholder="Ryan Gosling" required>
-
-            <label for="title">Books's title:</label>
-            <input type="text" id="title" name="title" placeholder="Ryan Gosling Autobiography" required>
-
-            <label for="num-pages">Number of pages:</label>
-            <input type="number" id="num-pages" name="num-pages" placeholder="300" required>
-
-            <label for="book-cover">Book's cover:</label>
-            <input type="url" id="author" name="author" placeholder="https://www.my-life.com/ryan-gosling.jpg" required>
+            <div class="grid-container">
+                <div class="author-name">
+                    <label for="author">Author's name:</label>
+                    <input type="text" id="author" name="author" placeholder="Ryan Gosling" required>
+                    <p id="author-error" class="error"></p>
+                </div>
+    
+                <div class="book-title">
+                    <label for="title">Books's title:</label>
+                    <input type="text" id="title" name="title" placeholder="Ryan Gosling Autobiography" required>
+                    <p id="title-error" class="error"></p>
+                </div>
+    
+                <div class="num-pages">
+                    <label for="num-pages">Number of pages:</label>
+                    <input type="number" id="num-pages" name="num-pages" placeholder="300" required>
+                    <p id="num-pages-error" class="error"></p>
+                </div>
+    
+                <div class="book-cover">
+                    <label for="book-cover">Book's cover:</label>
+                    <input type="url" id="cover" name="cover" placeholder="https://www.my-life.com/ryan-gosling.jpg" required>
+                    <p id="cover-error" class="error"></p>
+                </div>
+            </div>
+            <div class="add-book">
+                <button id="add-book" type="submit">Add book to your library</button>
+            </div>
         </form>
     </main>
 </body>
